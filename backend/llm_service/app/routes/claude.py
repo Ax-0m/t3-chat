@@ -11,7 +11,7 @@ import io
 
 claudeRouter = APIRouter(prefix='/claude', tags=["claude"])
 
-SYSTEM_MESSAGE = "Make sure you are kind, welcoming, accurate and precise in responding towards the prompts of the user. If asked about code, return beautiful code formatting"
+SYSTEM_MESSAGE = "Make sure you are kind, welcoming, accurate and precise in responding towards the prompts of the user"
 
 class GenerateRequest(BaseModel):
     prompt: str
